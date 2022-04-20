@@ -1,0 +1,66 @@
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden auto;
+}
+h1 {
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    overflow: auto;
+}
+form > input:not([type="submit"]) {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+form > input:not([type="submit"]):focus-within {
+    border-color: #88f;
+}
+[type="submit"] {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 99999px;
+    font-weight: bold;
+    color: white;
+    background-color: #0a0;
+    cursor: pointer;
+}
+label {
+    display: block;
+}
+.green {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #0a0;
+    overflow: auto;
+    max-width: 100%;
+}
+.red {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #a00;
+    overflow: auto;
+    max-width: 100%;
+}
